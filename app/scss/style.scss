@@ -1,0 +1,29 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: rgb(71, 187, 255);
+}
+
+.box {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.header {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    &__item {
+        font-size: 15px;
+        color: rgb(71, 203, 255);
+        line-height: 15px;
+    }
+}

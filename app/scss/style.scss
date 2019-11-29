@@ -137,7 +137,7 @@
             cursor: pointer;
         }
 
-        + button {
+        +button {
             margin-left: 5px;
         }
 
@@ -232,6 +232,7 @@
 
         &-star {
             font-size: 12px;
+
             span {
                 color: $bg;
             }
@@ -264,17 +265,21 @@
 
 .products-slider {
     padding: 110px 0 120px;
+
     .slick-dots {
         text-align: center;
         margin-top: 50px;
-        li{
+
+        li {
             display: inline-block;
             margin: 0 3px;
+
             &.slick-active {
                 button {
                     background-color: $green;
                 }
             }
+
             button {
                 border-radius: 50%;
                 background-color: #e8e8e8;
@@ -292,28 +297,35 @@
 .advantages {
     background-color: $bg;
     padding: 110px 0;
+
     &__title {
         color: #fff;
     }
+
     &__inner {
         display: flex;
         justify-content: space-between;
     }
+
     &__item {
         max-width: 370px;
         text-align: center;
         padding: 0 15px;
+
         &:hover {
             .advantages__item-images {
                 background-color: $green;
             }
+
             .advantages__item-title {
                 color: $green;
             }
+
             .advantages__item-images g {
                 fill: #fff;
             }
         }
+
         &-images {
             width: 114px;
             height: 114px;
@@ -324,15 +336,18 @@
             justify-content: center;
             margin: 0 auto 30px;
             transition: all .3s;
+
             & svg {
                 width: 50px;
                 height: 67px;
             }
+
             g {
                 fill: #000;
                 transition: all .5s;
             }
         }
+
         &-title {
             margin-bottom: 25px;
             color: #fff;
@@ -340,7 +355,47 @@
             @include f500;
             transition: all .3s;
         }
-        &-text {
+
+        &-text {}
+    }
+}
+
+.author {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 761px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__box {
+        max-width: 650px;
+        width: 100%;
+        min-height: 215px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $green;
+    }
+
+    &__title {
+        font-size: 30px;
+        line-height: 30px;
+        color: #fff;
+        margin-right: 45px;
+        max-width: 260px;
+
+        span {
+            @include f700;
         }
     }
+
+    &__link {
+        font-size: 18px;
+        line-height: 36px;
+        padding: 14px 40px;
+        background-color: #fff;
+    }
+
 }

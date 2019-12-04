@@ -67,6 +67,18 @@
     background-position: center;
     min-height: 533px;
 
+    &.page-search {
+        min-height: 230px;
+
+        .search__inner {
+            padding: 55px 0 70px;
+
+            &-text {
+                margin-bottom: 20px;
+            }
+        }
+    }
+
     &__inner {
         padding: 155px 0 100px;
         color: #fff;
@@ -579,6 +591,7 @@
             height: 40px;
             width: 43px;
             cursor: pointer;
+
             &::before {
                 content: "\f124";
                 font-size: 20px;
@@ -609,4 +622,183 @@
 
 .link-pinterest {
     background-position: -56px 0;
+}
+
+.product-page {
+
+    &__inner {
+        display: flex;
+    }
+
+    &__aside {
+        margin-right: 30px;
+    }
+
+    .aside {
+
+        &__item {
+            background-color: #fff;
+            border: 1px solid #dedede;
+            padding: 0 32px 32px;
+            margin-bottom: 30px;
+            width: 270px;
+        }
+
+        &__title {
+            border-bottom: 1px solid #dde3e8;
+            font-size: 20px;
+            color: $bg;
+            @include f700;
+            padding: 22px 0 19px;
+        }
+    }
+
+    .category__list {
+        padding: 10px;
+
+        li {
+            padding: 10px 0;
+            display: flex;
+            justify-content: space-between;
+            padding-left: 20px;
+            position: relative;
+
+            &::before {
+                content: '\f105';
+                position: absolute;
+                left: 0;
+                font-family: 'icomoon';
+                font-size: 14px;
+                color: $green;
+            }
+        }
+
+        a {
+            color: $bg;
+        }
+
+        span {
+            color: #90a4ae;
+            margin-left: 10px;
+        }
+    }
+}
+
+.price-range {
+    form {
+        padding-top: 20px;
+    }
+
+    button {
+        margin-top: 55px;
+        width: 100%;
+        padding: 16px 10px;
+        background-color: $green;
+        text-align: center;
+        @include f500;
+        color: #fff;
+        border: none;
+        display: block;
+        cursor: pointer;
+        position: relative;
+        &::before {
+            content: "\f002";
+            color: #fff;
+            position: absolute;
+            font-family: 'icomoon';
+            left: 58px;
+            top: 15px;
+            font-size: 15px;
+        }
+    }
+}
+
+.irs-min,
+.irs-max {
+    display: none;
+}
+
+.irs--flat .irs-line {
+    background-color: #f2f5f8;
+    height: 5px;
+
+}
+
+.irs--flat .irs-bar {
+    background-color: $bg;
+    height: 5px;
+}
+
+.irs--flat .irs-handle {
+    background-color: #fff;
+    border: 4px solid $green;
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    top: 19px;
+}
+
+.irs--flat .irs-handle>i:first-child {
+    display: none;
+}
+
+.irs-from, .irs-single, .irs-to {
+    top: 45px;
+}
+
+.irs--flat .irs-from::before, .irs--flat .irs-single::before, .irs--flat .irs-to::before {
+    display: none;
+}
+
+.irs--flat .irs-from, .irs--flat .irs-single, .irs--flat .irs-to {
+    border-radius: 0;
+    background-color: transparent;
+    padding: 0;
+    line-height: 1.333;
+    font-size: 15px;
+    text-shadow: none;
+    color: #78909c;
+}
+
+.product-page__aside{
+
+    .products__item {
+        box-shadow:none;
+        &-content {
+            padding: 0;
+            min-height: 75px;
+            border-bottom: none;
+        }
+
+        &-info {
+            padding: 0;
+            min-height: 0;
+        }
+
+        &-title {
+            font-size: 16px;
+        }
+
+        &-price {
+            font-size: 16px;
+        }
+
+        &-author .avatar {
+            min-width: 30px;
+            margin-right: 9px;
+        }
+
+        .products__item-starnum {
+            display: none;
+        }
+
+        .rate-star {
+            margin-right: 0;
+        }
+
+        .products__item-img {
+            min-height: 120px;
+        }
+    }
+    
 }

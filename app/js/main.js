@@ -22,6 +22,18 @@ $('.js-range-slider').ionRangeSlider({
     prefix: '$'
 });
 
+$('.icon-th-list').on('click', function() {
+   $('.products__item').addClass('list');
+   $(this).addClass('active');
+   $('.icon-th-large').removeClass('active');
+});
+
+$('.icon-th-large').on('click', function () {
+    $('.products__item').removeClass('list');
+    $(this).addClass('active');
+    $('.icon-th-list').removeClass('active');
+});
+
 var mixer = mixitup('.products__inner-box');
 
 });

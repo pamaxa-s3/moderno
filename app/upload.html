@@ -8,7 +8,6 @@
     <title>Moderno</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,500,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato:700|Raleway:700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/libs.min.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
@@ -269,56 +268,103 @@
                     </div>
                 </div>
             </header>
-
-             <section class="search page-search" style="background-image: url(images/search-bg.jpg);">
-                 <div class="container">
-                     <div class="search__inner">
-                         <div class="search__inner-text">
-                             Premium WordPress Themes, Web Templates and Many More ...
-                         </div>
-                         <div class="search__inner-form">
-                             <form>
-                                 <input type="text" placeholder="Search Your Keywords . . ." required>
-                                 <button type="submit">
-                                     <img src="images/icons/search.png" alt="">
-                                 </button>
-                             </form>
-                         </div>
-                     </div>
-                 </div>
-             </section>
-
-             <div class="breadcrumbs">
-                 <div class="container">
-                     <div class="breadcrumbs__inner">
-                         <ul class="breadcrumbs__list">
-                             <li><a href="#">Home</a></li>
-                             <li><span>404 Page</span> </li>
-                         </ul>
-                     </div>
-                 </div>
-             </div>
-
-             <div class="page-404">
+            <section class="search page-search" style="background-image: url(images/search-bg.jpg);">
                 <div class="container">
-                    <div class="page-404__wrapper">
-                        <div class="page-404__head">
-                            Error Page
+                    <div class="search__inner">
+                        <div class="search__inner-text">
+                            Premium WordPress Themes, Web Templates and Many More ...
                         </div>
-                        <div class="page-404__inner">
-                            <div class="page-404__404">404</div>
-                            <div class="page-404__title">
-                                Sorry Page Was Not Found
-                            </div>
-                            <div class="page-404__text">
-                                The page you are looking is not available or has been removed.
-                                Try going to Home Page by using the button below.
-                            </div>
-                            <a href="#" class="page-404__link">Go To Home Page</a>
+                        <div class="search__inner-form">
+                            <form>
+                                <input type="text" placeholder="Search Your Keywords . . ." required>
+                                <button type="submit">
+                                    <img src="images/icons/search.png" alt="">
+                                </button>
+                            </form>
                         </div>
                     </div>
-                </div>                
-             </div>
+                </div>
+            </section>
+
+            <div class="breadcrumbs">
+                <div class="container">
+                    <div class="breadcrumbs__inner">
+                        <ul class="breadcrumbs__list">
+                            <li><a href="#">Home</a></li>
+                            <li><span>Upload Product</span> </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <section class="upload">
+                <div class="container">
+                    <form>
+                        <div class="upload__inner">
+                            <div class="upload__inner-title">
+                                Upload Your item
+                            </div>
+                            <div class="upload__inner-content">
+                                <div class="upload-line">
+                                    <label>Select Categories<span>*</span></label>
+                                    <select name="" id="">
+                                        <option>Select</option>
+                                        <option>Select</option>
+                                        <option>Select</option>
+                                        <option>Select</option>
+                                    </select>
+                                </div>
+                                <div class="upload-line">
+                                    <label>Product Name<span>*</span></label>
+                                    <input type="text" placeholder="Enter your product name here ..." required>
+                                </div>
+                                <div class="upload-line">
+                                    <label>Product Description<span>*</span></label>
+                                    <textarea placeholder="<h1> Type your text  here </h1>" required></textarea>
+                                </div>
+                                <div class="upload-line">
+                                    <label>Upload Main File<span>*</span></label>
+                                    <input type="file" data-placeholder="No File Choosen" data-browse="Choose File" required>
+                                </div>
+                                <div class="upload-line">
+                                    <label>Upload Screenshots<span>*</span></label>
+                                    <input type="file" data-placeholder="No File Choosen" data-browse="Choose File" required>
+                                </div>
+                                <div class="upload-line">
+                                    <label>File Included<span>*</span></label>
+                                    <select name="" id="">
+                                        <option>Select</option>
+                                        <option>Select</option>
+                                        <option>Select</option>
+                                        <option>Select</option>
+                                    </select>
+                                </div>
+                                <div class="upload-line">
+                                    <label>File Dimensions<span>*</span></label>
+                                    <input type="text" placeholder="Enter the item  dimentionss here ..." required>
+                                </div>
+                                <div class="upload-line">
+                                    <label>Item Tags<span>*</span></label>
+                                    <input type="text" placeholder="Enter Tag Here" required>
+                                </div>
+                            </div>
+                            <div class="upload__inner-title">
+                                Set Your Price (US$)
+                            </div>
+                            <div class="upload__inner-content">
+                                <div class="upload-line">
+                                    <label>Regular License<span>*</span></label>
+                                    <input type="text" placeholder="$00.00" required>
+                                </div>
+                                <div class="upload-line">
+                                    <label>Extended License<span>*</span></label>
+                                    <input type="text" placeholder="$00.00" required>
+                                </div>
+                                <button type="submit">Submit</button>
+                            </div>                
+                        </div>
+                    </form>
+            </section>
 
         </div> <!-- content -->
 

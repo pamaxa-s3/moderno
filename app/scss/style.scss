@@ -200,6 +200,7 @@
             padding: 20px;
             border-width: 1px;
             overflow: auto;
+            z-index: 2;
         }
     }
 }
@@ -547,6 +548,11 @@
     padding: 110px 0 100px;
     background-color: $gray;
 
+    &__wrapper {
+        max-width: 1920px;
+        margin: 0 auto;
+    }
+
     &__inner-btn {
         text-align: center;
         margin-bottom: 60px;
@@ -572,12 +578,15 @@
 
     &__inner-box {
         display: flex;
-        justify-content: space-between;
+        justify-content: flex-start;
+        margin-left: -30px;
         flex-wrap: wrap;
     }
 
     &__item {
         max-width: 442px;
+        flex-basis: calc(25% - 30px);
+        margin-left: 30px;
         width: 100%;
         box-shadow: 0 1px 2px 0 rgba(205, 214, 222, .75);
         margin-bottom: 30px;
@@ -688,6 +697,11 @@
 .products-slider {
     padding: 110px 0 120px;
 
+    &__wrapper {
+        max-width: 1920px;
+        margin: 0 auto;
+    }
+
     .slick-dots {
         text-align: center;
         margin-top: 50px;
@@ -714,6 +728,10 @@
             }
         }
     }
+}
+
+.slick-initialized .slick-slide {
+    margin-left: -25px;
 }
 
 .advantages {
@@ -803,10 +821,10 @@
 
     &__title {
         font-size: 30px;
-        line-height: 30px;
+        line-height: 40px;
         color: #fff;
         margin-right: 45px;
-        max-width: 260px;
+        max-width: 280px;
 
         span {
             @include f700;
@@ -1216,6 +1234,10 @@
     }
 }
 
+.product-page__aside .products__item {
+    margin-left: 0;
+}
+
 .aside__products-item {
     .products__item:last-child {
         border: none;
@@ -1281,9 +1303,10 @@
     width: 100%;
 
     .products__item {
-        max-width: 270px;
+        flex-basis: calc(33.333% - 30px);
         background-color: #fff;
         transition: all .3s linear;
+        margin-left: 30px;
 
         &-img {
             min-height: 180px;
@@ -1315,8 +1338,9 @@
 
 .product-page__items {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     flex-wrap: wrap;
+    margin-left: -30px;
 }
 
 .pagination {
@@ -1372,6 +1396,7 @@
 
         &.list {
             max-width: 100%;
+            flex-basis: 100%;
 
             .products__item-img {
                 width: 240px;
@@ -1472,7 +1497,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 16px 0;
+        padding: 16px;
     }
 
     &__images {
@@ -1694,6 +1719,44 @@
     display: flex;
     justify-content: space-between;
     padding: 30px 0;
+
+    .jq-selectbox__select {
+        height: 27px;
+        padding: 0 30px 0 10px;
+        border: 1px solid #CCC;
+        background: #fff;
+        box-shadow: none;
+        font: 13px/30px 'Roboto', sans-serif;
+        color: #333;
+        text-shadow: none;
+        position: relative;
+    }
+
+    .jq-selectbox__trigger {
+        border-left: none;
+
+
+
+        .jq-selectbox__trigger-arrow {
+            border: none;
+            top: 0px;
+            right: 17px;
+
+            &::before {
+                content: "\f0d7";
+                font-family: 'icomoon';
+                font-size: 13px;
+                color: $green;
+                position: absolute;
+            }
+        }
+    }
+
+    .jq-selectbox__select-text {
+        color: #70838d;
+        font-size: 13px;
+
+    }
 }
 
 .price__product {
@@ -1775,7 +1838,6 @@
         position: relative;
         text-align: center;
 
-        // padding: 25px 30px 30px;
         &::before {
             position: absolute;
             top: 6px;
@@ -2004,7 +2066,8 @@
         margin-bottom: 50px;
 
         iframe {
-            width: 1090px;
+            max-width: 1090px;
+            width: 100%;
             height: 415px;
         }
     }
@@ -2178,6 +2241,45 @@
 
 .settings {
     padding-bottom: 100px;
+
+    .jq-selectbox__select {
+        height: 40px;
+        padding: 0 45px 0 10px;
+        border: 1px solid #d7d7d7;
+        border-radius: 0px;
+        background: #f9f9f9;
+        box-shadow: none;
+        font: 14px/40px 'Roboto', sans-serif;
+        color: #707070;
+        text-shadow: none;
+    }
+
+    .jq-select-multiple,
+    .jq-selectbox {
+        width: 100%;
+        max-width: 540px;
+    }
+
+    .jq-selectbox__trigger {
+        border-left: none;
+    }
+
+    .jq-selectbox__trigger-arrow {
+        border: none;
+        
+
+
+        &::before {
+            content: "\f0d7";
+            font-family: 'icomoon';
+            font-size: 15px;
+            color: #444;
+            right: 4px;
+            top: -13px;
+            position: absolute;
+        }
+    }
+
 }
 
 .page-box {

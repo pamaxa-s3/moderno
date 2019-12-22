@@ -24,3 +24,4 @@
 [1130/151030.837:ERROR:process_memory_win.cc(73)] ReadMemory at 0xe025eb2000 of 6024 bytes failed: Запрос ReadProcessMemory или WriteProcessMemory был выполнен только частично. (0x12B)
 [1130/151030.845:ERROR:scoped_process_suspend.cc(40)] NtResumeProcess: Попытка доступа к процессу, выполняющему процедуру завершения. (0xc000010a)
 [1130/224505.366:WARNING:minidump_to_upload_parameters.cc(67)] duplicate annotation name metrics_client_id, discarding value 64a64db3da60434888ae0aa07254ec4b
+[1211/150418.212:ERROR:process_info.cc(359)] UncheckedAllocate
